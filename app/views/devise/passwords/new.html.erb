@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1><strong>Forgot Your Password?</strong></h1>
+  </div>
+
+	<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  	<div class="form_group"><br/>
+    	<%= f.email_field :email, :placeholder => 'Email Address', autofocus: true, class: "form-control" %>
+  	</div><br />
+
+  	<div class="actions">
+    	<%= f.submit "Send me reset password instructions", class: "btn btn-primary btn-lg" %>
+  	</div><br />
+	<% end %>
+
+	<div class="panel-footer">
+    <p>Don't have an account?</p>
+      <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  			<%= link_to "Sign up", new_registration_path(resource_name), class: "btn btn-primary btn-sm" %><br />
+			<% end -%>
+	</div>
+</div>

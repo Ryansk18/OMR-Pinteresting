@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+
+$body-bg:												#ecf0f1;
+$font-family-sans-serif:				'Droid Sans', sans-serif;
+$font-size-base:								14px;
+$navbar-default-bg:							white;
+$navbar-default-link-color:			#7f8c8d;
+$navbar-default-brand-color:		#C62828;
+$brand-primary:									#C62828;
+$button-deault:									white;
+$jumbotron-bg:									white;
+$jumbotron-heading-color:				#000000;
+$jumbotron-color:								#ecf0f1;
+$well-bg:												#95a5a6;
+$text-color:										#000000;
+$link-color:										#C62828;
+$panel-default-border:					#000000;
+$panel-default-text:						#000000;
+$panel-default-heading-bg:			#95a5a6;
+$panel-footer-bg:								#95a5a6;
+$input-color:										#000000;
+
+@import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.resize {
+    height: 264px; 
+    width: 300px; 
+}
+
+.base-text {
+		color: #000000;
+}
