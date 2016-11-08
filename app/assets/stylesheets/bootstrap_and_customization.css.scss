@@ -20,7 +20,9 @@ $panel-default-heading-bg:			#95a5a6;
 $panel-footer-bg:								#95a5a6;
 $input-color:										#000000;
 
+@import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 .center {
 	text-align: center;
